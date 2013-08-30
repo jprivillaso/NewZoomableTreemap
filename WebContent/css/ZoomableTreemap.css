@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-family: sans-serif;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+
+#chart {
+	font-family: sans-serif;
+	color: #FFF;
+	/*border: solid 1px red;*/
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	height: auto;
+	width: auto;
+}
+
+rect {
+	stroke: #fff;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+rect.parent,.grandparent rect {
+	stroke-width: 2px;
+}
+
+.grandparent rect {
+	fill: #5f5f5f;
+	width: 100%;
+}
+
+.grandparent text {
+	font-weight: bold;
+}
+
+.grandparent:HOVER{
+	cursor: pointer;
+}
+
+text {
+	pointer-events: none;
+	fill: #fff;
+	border: solid 1px white;
+}
+
+.grandparent text {
+	color: #FFF;
+	border-width: 1px;
+}
+
+.children:HOVER {
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.txtName {
+	font-weight: bold;
+}
+
+
+title{
+	border: solid 1px red;
+	background-color: blue;
+}
